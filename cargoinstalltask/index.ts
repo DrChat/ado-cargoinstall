@@ -158,6 +158,8 @@ async function run() {
             tl.setResult(tl.TaskResult.Failed, util.format('failed to install crate: code %d', res))
             return;
         }
+
+        tl.setResult(tl.TaskResult.Succeeded, 'Success');
     }
     catch (err) {
         if (err instanceof Error) {

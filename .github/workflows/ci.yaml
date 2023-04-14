@@ -17,9 +17,18 @@ jobs:
         cache-dependency-path: '**/package-lock.json'
     - run: npm ci
       working-directory: cargoinstalltask
+
     - name: Compile typescript
       run: tsc
       working-directory: cargoinstalltask
+    
+    - name: Install mocha
+      run: npm i mocha -g
+    - name: Run tests
+      run: mocha tests/_suite.js
+      working-directory: cargoinstalltask
+      env:
+        TASK_TEST_TRACE: '1'
 
     - name: Install tfx CLI
       run: npm i -g tfx-cli
