@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "cargo-install-task",
+    "name": "Cargo install task",
+    "version": "0.1.0",
+    "publisher": "VRTD",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Tool for installing Cargo crates using binstall",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"
+    },
+    "files": [
+        {
+            "path": "cargoinstalltask"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-cargo-install-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "cargoinstalltask"
+            }
+        }
+    ]
+}

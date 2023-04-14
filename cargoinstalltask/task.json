@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "e8a5e063-cc6b-494d-a8fe-3ca4c1510787",
+    "name": "CargoInstall",
+    "friendlyName": "Cargo Install",
+    "description": "Cargo Install for ADO",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Justin Moore <jusmoore@microsoft.com>",
+    "version": {
+        "Major": 1,
+        "Minor": 0,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Install Cargo package $(crate)",
+    "inputs": [
+        {
+            "name": "crates",
+            "type": "string",
+            "label": "Crates to install",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "The Cargo crates to install, delimited by commas"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "index.js"
+        }
+    }
+}

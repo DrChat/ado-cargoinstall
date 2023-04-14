@@ -1,0 +1,23 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/follow-redirects": "^1.14.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.15.11",
+    "@types/q": "^1.5.5",
+    "follow-redirects": "^1.15.2",
+    "sync-request": "^6.1.0"
+  }
+}
