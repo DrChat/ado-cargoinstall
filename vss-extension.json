@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
-    "id": "cargo-install-task",
-    "name": "Cargo install task",
+    "id": "rust-tools",
+    "name": "Rust Tools",
     "version": "0.1.0",
     "publisher": "VRTD",
     "targets": [
@@ -9,7 +9,7 @@
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
-    "description": "Tool for installing Cargo crates using binstall",
+    "description": "Tools for Rust support in ADO",
     "categories": [
         "Azure Pipelines"
     ],
